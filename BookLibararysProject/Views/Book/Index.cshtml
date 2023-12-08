@@ -1,0 +1,14 @@
+﻿@using BookLibarary.Models
+@model IEnumerable<Book>
+
+@{
+    ViewData["Title"] = "Books List";
+}
+
+<h1>Books List</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+@Html.Partial("_BookTaple")

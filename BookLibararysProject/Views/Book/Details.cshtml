@@ -1,0 +1,15 @@
+﻿@using BookLibarary.Models;
+@model BookLibarary.Models.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+<h4>Book</h4>
+<hr />
+@Html.Partial("_BookDetails")
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
